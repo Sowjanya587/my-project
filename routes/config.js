@@ -1,14 +1,11 @@
-// Required environment variables
-const VITE_APP_TITLE = process.env.VITE_APP_TITLE;
-const VITE_APP_URL = process.env.VITE_APP_URL.replace(/\/+$/, '');
+const VITE_APP_TITLE = process.env.VITE_APP_TITLE || 'My Custom Activity';
+const VITE_APP_URL = (process.env.VITE_APP_URL || '').replace(/\/+$/, '');
 
-// Optional environment variables
 const JB_TIMEOUT = process.env.JB_TIMEOUT || 20000;
 const JB_RETRY_COUNT = process.env.JB_RETRY_COUNT || 0;
 const JB_RETRY_DELAY = process.env.JB_RETRY_DELAY || 1000;
 const JB_CONCURRENT_REQUESTS = process.env.JB_CONCURRENT_REQUESTS || 5;
 
-// Configuration definition
 const json = {
   workflowApiVersion: '1.1',
   metaData: {
@@ -80,4 +77,4 @@ const json = {
 
 module.exports = (req, res) => {
   res.json(json);
-}
+};
