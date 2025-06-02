@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/config", "dest": "/api/config.js" },
+    { "src": "/save", "dest": "/api/save.js" },
+    { "src": "/publish", "dest": "/api/publish.js" },
+    { "src": "/execute", "dest": "/api/execute.js" }
+  ]
+}

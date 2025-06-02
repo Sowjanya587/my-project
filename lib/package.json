@@ -1,0 +1,8 @@
+{
+  "name": "mc-journey-activity",
+  "version": "1.0.0",
+  "dependencies": {
+    "fuel-rest": "^3.0.0",
+    "jsonwebtoken": "^9.0.0"
+  }
+}
